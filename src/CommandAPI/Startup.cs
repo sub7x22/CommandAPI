@@ -1,7 +1,9 @@
+using CommandAPI.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+
 namespace CommandAPI
 {
     public class Startup
@@ -10,6 +12,7 @@ namespace CommandAPI
         {
             //SECTION 1. Add code below
             services.AddControllers();
+            services.AddScoped<ICommandAPIRepo, MockCommandAPIRepo>();
         }
         public void Configure(IApplicationBuilder app,
         IWebHostEnvironment env)
