@@ -13,7 +13,7 @@ namespace CommandAPI.Controllers
     [ApiController]
     public class CommandsController : ControllerBase
     {
-        //bs random change
+        //eeeeeeeee remove this later.
         private readonly ICommandAPIRepo _repository;
         private readonly IMapper _mapper;
         public CommandsController(ICommandAPIRepo repository, IMapper mapper)
